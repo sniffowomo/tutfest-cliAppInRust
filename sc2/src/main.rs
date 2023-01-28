@@ -2,6 +2,7 @@
 Second attempt - for piping system commands
 */
 
+use cfonts::config::{GRADIENTS_AGENDER, GRADIENTS_AROMANTIC};
 // Importing crates color and standard
 use ::yansi::{Color, Paint, Style};
 // Import crate for system command s
@@ -14,7 +15,7 @@ use ::cfonts::*;
 #[warn(unused_imports)]
 
 fn main() {
-    Cf_1();
+ cf1();
     println!(
         "{}",
         Paint::red("System Commands in Rust with pipes ")
@@ -26,12 +27,12 @@ fn main() {
 
 //cfonts setup banner
 
-fn Cf_1() {
+fn cf1() {
     say(Options {
         text: String::from("Hello"),
         font: Fonts::FontBlock,
         colors: vec![Colors::RedBright],
-        align: Align::Center,
+        gradient: vec!["red","blue"],
         ..Options::default()
     });
 }
