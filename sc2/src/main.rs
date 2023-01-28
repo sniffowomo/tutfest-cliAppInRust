@@ -6,6 +6,7 @@ Second attempt - for piping system commands
 use ::yansi::{Color, Paint, Style};
 // Import crate for system command s
 use ::std::process::*;
+use std::vec;
 // Cfonts crates for banner
 use ::cfonts::*;
 
@@ -13,6 +14,7 @@ use ::cfonts::*;
 #[warn(unused_imports)]
 
 fn main() {
+    Cf_1();
     println!(
         "{}",
         Paint::red("System Commands in Rust with pipes ")
@@ -20,16 +22,15 @@ fn main() {
             .bold()
             .underline()
     );
-    Cf_1();
 }
 
-//cfonts crate test
+//cfonts setup banner
 
 fn Cf_1() {
     say(Options {
         text: String::from("Hello"),
-        font: Fonts::FontChrome,
-        colors: Colors::BlueBright,
+        font: Fonts::FontBlock,
+        colors: vec![Colors::RedBright],
         ..Options::default()
     });
 }
