@@ -21,4 +21,6 @@
 N | ? 
 |:--:|:--:|
 [`sc1`](./sc1/) | System commands in Rust
+[`sc2`](./sc2/) | Piping system commands
+
 
