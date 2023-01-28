@@ -4,6 +4,7 @@
 ----
 1. [WTF ?](#wtf-)
 2. [References](#references)
+3. [Output PIC](#output-pic)
 
 ----
 
@@ -21,3 +22,6 @@ Clit | Lick
 [`std::process::Command`](https://doc.rust-lang.org/std/process/struct.Command.html) | Rust official manual, code here is referenced and learnt from here 
 [`yansi`](https://docs.rs/yansi/latest/yansi/index.html) | Crage official wiki, implementation in this repo is also taken from here directly 
 
+# Output PIC 
+
+![](./pix/2023-01-28_15-16-04.png)
