@@ -6,9 +6,14 @@ use ::std::process::Command;
 use ::yansi::{Color, Paint, Style};
 
 // Defining the colors shit here
-let di_1 = Style::new(Color::Green).bold().bg(Color::Magenta);
 
 fn main() {
+    println!(
+        "
+        {}
+    ",
+        Paint::blue("Executing Commands via yansi Rust")
+    );
     bn_1();
     s_1();
 }
@@ -29,6 +34,12 @@ System Commands with Pipes
 // System Commands block
 fn s_1() {
     let mut exa_o1 = Command::new("exa");
-    exa_o1.args(["-la", "--icons"]).status();
-    print!("{:?}", exa_o1);
+    exa_o1.args(["-la", "--icons"]).status().expect("Bastard");
+    print!("{}", "{exa_o1:?}",);
+}
+
+fn s_2() {
+    let mut exa_o1 = Command::new("exa");
+    exa_o1.args(["-la", "--icons"]).status().expect("Bastard");
+    print!("{exa_o1:?}");
 }
