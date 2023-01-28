@@ -37,9 +37,3 @@ fn s_1() {
     exa_o1.args(["-la", "--icons"]).status().expect("Bastard");
     print!("{}", "{exa_o1:?}",);
 }
-
-fn s_2() {
-    let mut exa_o1 = Command::new("exa");
-    exa_o1.args(["-la", "--icons"]).status().expect("Bastard");
-    print!("{exa_o1:?}");
-}
