@@ -31,6 +31,7 @@ fn Cf_1() {
         text: String::from("Hello"),
         font: Fonts::FontBlock,
         colors: vec![Colors::RedBright],
+        align: Align::Center,
         ..Options::default()
     });
 }
