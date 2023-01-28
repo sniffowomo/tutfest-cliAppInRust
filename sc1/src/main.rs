@@ -25,8 +25,8 @@ fn bn_1() {
         "{}",
         di_1.paint(
             "
-System Commands with Pipes
-**************************"
+System Commands 
+****************"
         )
     )
 }
@@ -35,5 +35,6 @@ System Commands with Pipes
 fn s_1() {
     let mut exa_o1 = Command::new("exa");
     exa_o1.args(["-la", "--icons"]).status().expect("Bastard");
-    print!("{}", "{exa_o1:?}",);
+    println!("Args used:");
+    print!("{exa_o1:?}");
 }
