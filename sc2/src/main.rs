@@ -45,6 +45,7 @@ fn cf1() {
         font: Fonts::FontSlick,
         line_height: 0,
         colors: vec![Colors::Rgb(Rgb::Val(0, 100, 200))],
+        background: Colors::Green,
         // gradient: vec![String::from("#d60270"), String::from("#1c92f6")],
         transition_gradient: true,
         independent_gradient: true,
