@@ -26,13 +26,28 @@ fn main() {
 
 //cfonts setup banner
 
+// fn cf1() {
+//     say(Options {
+//         text: String::from("Hello"),
+//         font: Fonts::FontBlock,
+//         line_height: 0,
+//         colors: vec![Colors::RedBright],
+//         gradient: Vec::new(),
+//         ..Options::default()
+//     });
+// }
+
+// Retrying her
+
 fn cf1() {
     say(Options {
-        text: String::from("Hello"),
-        font: Fonts::FontBlock,
+        text: String::from("Gonna|Fuck|AllNiteLong"),
+        font: Fonts::FontSlick,
         line_height: 0,
-        colors: vec![Colors::RedBright],
-        gradient: Vec::new(),
+        colors: vec![Colors::Rgb(Rgb::Val(0, 100, 200))],
+        // gradient: vec![String::from("#d60270"), String::from("#1c92f6")],
+        transition_gradient: true,
+        independent_gradient: true,
         ..Options::default()
     });
 }
